@@ -1,0 +1,162 @@
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+/* 1. Theme default css */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap");
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 14px; }
+
+.img, img {
+  max-width: 100%; }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit; }
+
+/*----------------------------------------*/
+/* Theme default CSS END
+/*----------------------------------------*/
+.login-area {
+  position: relative;
+  z-index: 2;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .login-area .logIn-form {
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    padding: 30px; }
+    .login-area .logIn-form form img.logo {
+      margin-top: 30px;
+      margin-bottom: 20px; }
+      @media (max-width: 767px) {
+        .login-area .logIn-form form img.logo {
+          margin-top: 0px;
+          margin-bottom: 5px;
+          width: 125px; } }
+    .login-area .logIn-form form h3 {
+      font-size: 50px;
+      color: #000000;
+      line-height: 61px;
+      font-weight: 400; }
+      @media (max-width: 767px) {
+        .login-area .logIn-form form h3 {
+          font-size: 34px;
+          line-height: 50px; } }
+      .login-area .logIn-form form h3 span {
+        display: block;
+        font-size: 20px;
+        font-weight: 100;
+        color: #7E8085;
+        line-height: 35px; }
+        @media (max-width: 767px) {
+          .login-area .logIn-form form h3 span {
+            font-size: 18px; } }
+    .login-area .logIn-form form .denger-alert {
+      background: #FFF6F6;
+      padding: 10px;
+      margin-top: 40px;
+      position: relative;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      padding-left: 20px;
+      height: 67px;
+      display: flex;
+      align-items: center; }
+      @media (max-width: 767px) {
+        .login-area .logIn-form form .denger-alert {
+          padding-left: 10px;
+          margin-top: 25px;
+          margin-bottom: 20px; } }
+      .login-area .logIn-form form .denger-alert h4 {
+        font-size: 11px;
+        font-weight: 700;
+        color: #E01313;
+        text-align: left;
+        position: relative;
+        padding-left: 30px;
+        line-height: 15px;
+        margin: 0;
+        text-transform: uppercase; }
+        .login-area .logIn-form form .denger-alert h4 i {
+          position: absolute;
+          left: 0;
+          top: 5px; }
+        .login-area .logIn-form form .denger-alert h4 span {
+          display: block;
+          font-size: 10px;
+          font-weight: 500;
+          text-transform: initial; }
+      .login-area .logIn-form form .denger-alert a {
+        position: absolute;
+        right: 15px;
+        top: 7px; }
+        @media (max-width: 767px) {
+          .login-area .logIn-form form .denger-alert a {
+            right: 10px;
+            top: 5px; } }
+    .login-area .logIn-form form input {
+      display: block;
+      width: 100%;
+      height: 56px;
+      border-radius: 5px;
+      border: 1px solid #EBEBEB;
+      margin-bottom: 15px;
+      padding-left: 25px;
+      outline: none; }
+      @media (max-width: 767px) {
+        .login-area .logIn-form form input {
+          height: 40px; } }
+    .login-area .logIn-form form ::placeholder {
+      font-size: 15px;
+      font-weight: 500;
+      color: #5D5D5D; }
+    .login-area .logIn-form form input[type="password"]::placeholder {
+      color: rgba(126, 128, 133, 0.239);
+      font-size: 42px; }
+    .login-area .logIn-form form a.forgot-pass {
+      display: block;
+      text-align: right;
+      font-size: 13px;
+      font-weight: 700;
+      color: #F56F2D;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-bottom: 25px; }
+    .login-area .logIn-form form button {
+      width: 120px;
+      height: 65px;
+      background: linear-gradient(45deg, #FFA335, #e5744e);
+      text-align: center;
+      color: #ffffff;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      outline: none;
+      margin-bottom: 10px; }
+      @media (max-width: 767px) {
+        .login-area .logIn-form form button {
+          height: 40px; } }
+
+.login-area::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #01081F;
+  z-index: -1;
+  opacity: .9; }
+
+/*# sourceMappingURL=style.css.map */

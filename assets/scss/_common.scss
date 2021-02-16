@@ -1,0 +1,29 @@
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+
+/* 1. Theme default css */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+ body {
+	font-family: $open-sans;
+	font-weight: normal;
+    font-style: normal; 
+	font-size: 14px;
+}
+.img,img {
+	max-width: 100%; 
+}
+ 
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+/*----------------------------------------*/
+/* Theme default CSS END
+/*----------------------------------------*/
+ 

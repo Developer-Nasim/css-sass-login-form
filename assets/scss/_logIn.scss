@@ -1,0 +1,153 @@
+.login-area{
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    overflow-y: scroll;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .logIn-form{
+        background-color: $white;
+        border-radius: 5px;
+        text-align: center;
+        padding: 30px;
+        form{
+            img.logo {
+                margin-top: 30px;
+                margin-bottom: 20px;
+                @media #{$xs} {
+                    margin-top: 0px;
+                    margin-bottom: 5px;
+                    width: 125px;
+                  }
+            }
+            h3 {
+                font-size: 50px; 
+                color:$black;
+                line-height: 61px;
+                font-weight: 400; 
+                @media #{$xs} {
+                    font-size: 34px;
+                    line-height: 50px;
+                  }
+                span {
+                    display: block;
+                    font-size: 20px;
+                    font-weight: 100;
+                    color: $heading-span-color;
+                    line-height: 35px;
+                    @media #{$xs} {
+                        font-size: 18px;
+                      }
+                }
+            }
+            .denger-alert {
+                background: $red-soft-color;
+                padding: 10px;
+                margin-top: 40px;
+                position: relative;
+                margin-bottom: 30px;
+                border-radius: 5px;
+                padding-left: 20px;
+                height: 67px;
+                display: flex;
+                align-items: center;
+                @media #{$xs} {
+                    padding-left: 10px;
+                    margin-top: 25px; 
+                    margin-bottom: 20px;
+                  }
+                h4 {
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: $red-color;
+                    text-align: left;
+                    position: relative;
+                    padding-left: 30px;
+                    line-height: 15px;
+                    margin: 0;
+                    text-transform: uppercase;
+                    i {
+                        position: absolute;
+                        left: 0;
+                        top: 5px;
+                    }
+                    span {
+                        display: block;
+                        font-size: 10px;
+                        font-weight: 500;
+                        text-transform: initial;
+                    }
+                }
+                a {
+                    position: absolute;
+                    right: 15px;
+                    top: 7px;
+                    @media #{$xs} {
+                        right: 10px;
+                        top: 5px;
+                      }
+                }
+            }
+           input {
+                display: block;
+                width: 100%;
+                height: 56px;
+                border-radius: 5px;
+                border: 1px solid $border-color;
+                margin-bottom: 15px;
+                padding-left: 25px;
+                outline: none;
+                @media #{$xs} {
+                    height: 40px;
+                  }
+            }
+           ::placeholder {
+                font-size: 15px;
+                font-weight: 500;
+                color: $placeholder-text-color;
+            }
+            input[type="password"]::placeholder {
+                color: $placeholder-pass-color;
+                font-size: 42px;
+            }
+            a.forgot-pass {
+                display: block;
+                text-align: right;
+                font-size: 13px;
+                font-weight: 700;
+                color: $orenge-color;
+                text-decoration: none;
+                text-transform: uppercase;
+                margin-bottom: 25px;
+            }
+            button {
+                width: 120px;
+                height: 65px;
+                background:$button-color;
+                text-align: center;
+                color: $white;
+                text-transform: uppercase;
+                border: none;
+                border-radius: 10px;
+                font-size: 14px;
+                font-weight: 700;
+                outline: none;
+                margin-bottom: 10px;
+                @media #{$xs} {
+                    height: 40px;
+                  }
+            }
+
+        }
+    }
+}
+.login-area::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: $overlay;
+    z-index: -1;
+    opacity: .9;
+}
